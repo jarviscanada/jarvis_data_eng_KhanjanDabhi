@@ -39,12 +39,13 @@ The following are a description of all the scripts used in the project.
 ### Description
 This script was used to Create, Start/ Stop the docker container which runs the Postgres database if it already doesn't exist.
 ### Usage
-The following command will start the Postgres container. Here psql_username is the Postgres username and psql_password is the Postgres password.```
+The following command will start the Postgres container. Here psql_username is the Postgres username and psql_password is the Postgres password.
+```
 psql_docker.sh create psql_username psql_password
 ```
 
 The following command will start the Postgres container.
-```bash
+```
 psql_docker.sh start
 ```
 
@@ -54,27 +55,27 @@ psql_docker.sh stop
 ```
 
 ## host_info.sh
-###Description
+### Description
 This script will collect all the host hardware information on the node/server and send them to Postgres database. This script collects data such as hostname,CPU information, and  memory information.
-###Usage
+### Usage
 The command below will insert the hardware specifications data into the Postgres database. Here psql_host is the hostname running the database, psql_port is the port number,
 db_name is the database name we want to add specs. into, psql_user is the Postgres username, and psql_password is the Postgres password used when creating the database.
 ```bash
 host_info.sh psql_host psql_port db_name psql_user psql_password
 ```
-##host_usage.sh
+## host_usage.sh
 
-###Description
+### Description
 This script will be running every minute by using crontab. It will collect all the host usage such as CPU-Information, and Disk Usage Information.
-###Usage
+### Usage
 The command below will insert the usage data into the database. Here psql_host is the hostname running the database, psql_port is the port number, db_name is the database name we want to add specs. into, psql_user is the Postgres username, and psql_password is the Postgres password used when creating the database.
 ```bash
 host_info.sh psql_host psql_port psql_name psql_user psql_password
 ```
-##crontab
-###Description
+## crontab
+### Description
 The cron process from Linux is used to run the host_usage.sh script every one minute after configuring the crontab file. This can be double-checked by looking at the tables in the postgres database if they are being populated every minute then the scripts are working properly.
-###Uage
+### Uage
 We can edit the crontab file with the following command
 ```
 crontab -e
@@ -83,7 +84,7 @@ Add following line to the file to make it run every minute
 ```
 * * * * * bash <your path>/host_usage.sh psql_host psql_port db_name psql_user psql_password > /tmp/host_usage.log
 ```
-##queries.sql
+## queries.sql
 This SQL script contains sample SQL queries for use with the monitoring data.
 The first query displays all of the servers, along with their total memory and number of CPUs. This is a simple way to look at the server inventory. The second query displays the average amount of RAM consumed during a 5-minute period. This is quite useful for determining whether or not the servers contain the required information.
 Whether the necessary amount of memory is required, or if more memory is required The final query can be used to determine if a server is still operational indata transmission to the monitoring server.
@@ -93,7 +94,7 @@ psql -h localhost -U postgres -d host_agent -f queries.sql
 ## Database Modeling
 The host_agent postgres database contains two tables that are storing the data:
 
-##host_info
+## host_info
 
 This table keeps track of each Linux server's host hardware. When the data is loaded, a unique serial number is generated, which is then utilised to add the Linux server consumption data to the database. The number, architecture, model, speed, and cache of the CPU, as well as the total amount of RAM in the system, are all listed in this table.
 
@@ -109,7 +110,7 @@ L2_cache | `INTEGER` | The size of the L2 cache of the server's CPU is stored he
 total_mem | `INTEGER` | This value represents the total amount of memory space installed on the server.
 timestamp | `TIMESTAMP` | When data is added to the database, this is the timestamp. The server's current timestamp is used by default.
 
-##host_usage
+## host_usage
 
 The information as to how the host is used is stored in this table. The host id is used to identify which server the request originated from. The table shows how much memory is free in the system, how much CPU is used, how much disc IO is used, and how much disc is accessible.
 
