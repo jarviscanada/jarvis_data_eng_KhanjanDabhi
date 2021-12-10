@@ -39,8 +39,7 @@ The following are a description of all the scripts used in the project.
 ### Description
 This script was used to Create, Start/ Stop the docker container which runs the Postgres database if it already doesn't exist.
 ### Usage
-The following command will start the Postgres container. Here psql_username is the Postgres username and psql_password is the Postgres password.
-```
+The following command will start the Postgres container. Here psql_username is the Postgres username and psql_password is the Postgres password.```
 psql_docker.sh create psql_username psql_password
 ```
 
