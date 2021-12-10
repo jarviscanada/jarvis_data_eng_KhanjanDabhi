@@ -2,14 +2,14 @@
 The main goal of this project is to make  Minimum Viable Product (MVP) of a Linux Cluster Monitoring system(LCM). The LCM made in this project can be used to record hardware specifications of several nodes/servers which are connnected with each other internally  through a switch and communicate with IPv4. LCM is mainly used by Cluster Administration Team which manages and plans the resources for servers in a company. The data is then stored into a RDBMS server which can be used by the team to generate more information. This can help the administration team monitor and support the cluster in a better way.
 
 The technologies used for this project are:
--Bash scripts
--Postgres v9.6 database
--psql v9.2
--git v2.30.1
--Docker v20.10.11
--IntelliJ IDEA v2021.2.3
--Jarvis Remote Desktop (JRD) - Remote development and testing environment running CentOS 7
--Google Cloud Platform (GCP) provided the instance to run the JRD
+  -Bash scripts
+  -Postgres v9.6 database
+  -psql v9.2
+  -git v2.30.1
+  -Docker v20.10.11
+  -IntelliJ IDEA v2021.2.3
+  -Jarvis Remote Desktop (JRD) - Remote development and testing environment running CentOS 7
+  -Google Cloud Platform (GCP) provided the instance to run the JRD
 
 
 # Quick Start
