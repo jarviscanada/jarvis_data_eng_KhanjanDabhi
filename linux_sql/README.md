@@ -92,7 +92,9 @@ psql -h localhost -U postgres -d host_agent -f queries.sql
 ````
 ## Database Modeling
 The host_agent postgres database contains two tables that are storing the data:
-###`host_info`
+
+###host_info
+
 This table keeps track of each Linux server's host hardware. When the data is loaded, a unique serial number is generated, which is then utilised to add the Linux server consumption data to the database. The number, architecture, model, speed, and cache of the CPU, as well as the total amount of RAM in the system, are all listed in this table.
 
 Column | Type | Description
@@ -108,6 +110,7 @@ total_mem | `INTEGER` | This value represents the total amount of memory space i
 timestamp | `TIMESTAMP` | When data is added to the database, this is the timestamp. The server's current timestamp is used by default.
 
 ###host_usage
+
 The information as to how the host is used is stored in this table. The host id is used to identify which server the request originated from. The table shows how much memory is free in the system, how much CPU is used, how much disc IO is used, and how much disc is accessible.
 
 Column | Type | Description
