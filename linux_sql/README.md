@@ -39,7 +39,8 @@ The following are a description of all the scripts used in the project.
 ### Description
 This script was used to Create, Start/ Stop the docker container which runs the Postgres database if it already doesn't exist.
 ### Usage
-The following command will start the Postgres container. Here psql_username is the Postgres username and psql_password is the Postgres password.```bash
+The following command will start the Postgres container. Here psql_username is the Postgres username and psql_password is the Postgres password.
+```
 psql_docker.sh create psql_username psql_password
 ```
 
@@ -93,7 +94,7 @@ psql -h localhost -U postgres -d host_agent -f queries.sql
 ## Database Modeling
 The host_agent postgres database contains two tables that are storing the data:
 
-###host_info
+##host_info
 
 This table keeps track of each Linux server's host hardware. When the data is loaded, a unique serial number is generated, which is then utilised to add the Linux server consumption data to the database. The number, architecture, model, speed, and cache of the CPU, as well as the total amount of RAM in the system, are all listed in this table.
 
@@ -109,7 +110,7 @@ L2_cache | `INTEGER` | The size of the L2 cache of the server's CPU is stored he
 total_mem | `INTEGER` | This value represents the total amount of memory space installed on the server.
 timestamp | `TIMESTAMP` | When data is added to the database, this is the timestamp. The server's current timestamp is used by default.
 
-###host_usage
+##host_usage
 
 The information as to how the host is used is stored in this table. The host id is used to identify which server the request originated from. The table shows how much memory is free in the system, how much CPU is used, how much disc IO is used, and how much disc is accessible.
 
