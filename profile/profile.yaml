@@ -77,7 +77,7 @@ highlighted_projects:
     git_url: "https://github.com/KhanjanDabhi/Concepts-of-Operating-Systems"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Worked in a team of four to design a portable file manipulator which will operate on files for various operating systems. POFM was written in C, using standard commands and no system calls as the program had to be portable. This was tested on Windows, Linux and MacOS.
-   - name: "Applied Computational Intellegence"
+  - name: "Applied Computational Intellegence"
     #URL is optional
     git_url: "https://github.com/KhanjanDabhi/Applied-Computational-Intelligence"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
