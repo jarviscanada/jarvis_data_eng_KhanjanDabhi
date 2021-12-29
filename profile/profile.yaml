@@ -91,7 +91,7 @@ professional_experience:
     company: "Jarvis"
     duration: "2021-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: ""
+    description: " Worked on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  
 
 #List of edcuation
@@ -100,11 +100,13 @@ education:
     duration: "2018-2021"
     degree: "Bachelor of Software Engineering"
     department: "Software Engineering"
+    awards_achievements:
     
   - school_name: "Lakehead University"
     duration: "2018-2019"
     degree: "Technical Diploma in Software Engineering"
     department: "Software Engineering"
+    awards_achievements:
    
   
 
