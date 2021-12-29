@@ -1,74 +1,80 @@
 {
   "education": [
     {
-      "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
-      ],
-      "degree": "Bachelor of Applied Sciences",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
+      "awards_achievements": null,
+      "degree": "Bachelor of Software Engineering",
+      "department": "Software Engineering",
+      "duration": "2018-2021",
+      "school_name": "Lakehead University"
     },
     {
       "awards_achievements": null,
-      "degree": "Master of Engineering",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "degree": "Technical Diploma in Software Engineering",
+      "department": "Software Engineering",
+      "duration": "2018-2019",
+      "school_name": "Lakehead University"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
+      "description": "Developed a MRI brain tumor segmentation algorithm which would detect tumors from 3D MRI Images as a part of BRATS2020 Competition. Used Machine Learning for this project. The main goal of this project was to use of machine learning models outside a notebook enviorment while taking part in BRATS2020 challenge to detect tumor region in MRI images. Objectives learned include manipulation of 3D image data, using heavy and task specific deep neural networks such as UNet.",
+      "git_url": "https://github.com/KhanjanDabhi/MRI-Brain-Tumor-Segmentation",
+      "name": "MRI-Brain-Tumor-Segmentation"
     },
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": null,
-      "name": "Machine Learning"
+      "description": "On given Movie Rental System, performed refactoring step-by-step to make it easier to add new code, fixed smelly code to make sure that the concepts of object-orientation are preserved/applied, recover parts of the system design by generating class diagrams of the system, made sure that all the unit test passed after applying changes.",
+      "git_url": "https://github.com/KhanjanDabhi/Refactoring",
+      "name": "Refactoring and Object-Oriented Design"
+    },
+    {
+      "description": "Worked in a team of four to design a portable file manipulator which will operate on files for various operating systems. POFM was written in C, using standard commands and no system calls as the program had to be portable. This was tested on Windows, Linux and MacOS.",
+      "git_url": "https://github.com/KhanjanDabhi/Concepts-of-Operating-Systems",
+      "name": "Concepts of Operating Systems"
+    },
+    {
+      "description": "Detect COVID-19 in CT scans for lungs. The dataset was obtained from Kaggle which contains images for lung CT scan with and without the infection. Key concepts of machine learning for images were used such as data augmentation, adaptive histogram equalization, contrast-stretching and cross validation. Effects of image segmentation on these models was also noted by performing un-supervised segmentation through K-means clustering. Pre-trained and self-trained neural networks were compared for this project such as VGG16, ResNet50 and Mobile-Net.",
+      "git_url": "https://github.com/KhanjanDabhi/Applied-Computational-Intelligence",
+      "name": "Applied Computational Intellegence"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Developed a Linux Cluster Monitoring system(LCM). In this project, the agent can be used to record hardware specifications of several nodes/servers which are connected with each other internally through a switch and communicate with IPv4. LCM is mainly used by Cluster Administration Team which manages and plans the resources for servers in a company. The data is then stored into a RDBMS server which can be used by the team to generate more information. This can help the administration team monitor and support the cluster in a better way.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
       "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+        "Twitter App: In Progress",
+        "JDBC App: In Progress",
+        "Grep App: In Progress"
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
     },
     {
-      "description": "",
+      "description": "In Progress",
       "git_url": "/springboot",
       "name": "Springboot App"
     },
     {
-      "description": "",
+      "description": "In Progress",
       "git_url": "/python_data_anlytics",
       "name": "Python Data Analytics"
     },
     {
-      "description": "",
+      "description": "In Progress",
       "git_url": "/hadoop",
       "name": "Hadoop"
     },
     {
-      "description": "",
+      "description": "In Progress",
       "git_url": "/spark",
       "name": "Spark"
     },
     {
-      "description": "",
+      "description": "In Progress",
       "git_url": "/cloud_devops",
       "name": "Cloud/DevOps"
     }
@@ -77,21 +83,14 @@
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
+        "Google Data Analytics Certificate"
       ],
       "title": "Certificates"
     },
     {
       "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
-    },
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Avid Plant Grower",
+        "Competitive gaming"
       ],
       "title": "Activities/Hobbies"
     }
@@ -99,31 +98,25 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2020-present",
+      "description": " Worked on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "duration": "2021-present",
       "title": "Software Developer"
-    },
-    {
-      "company": "XYZ Company",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2019",
-      "title": "Tutor"
     }
   ],
   "skills": {
     "competent": [
-      "Donec",
-      "fermentum",
-      "Donec",
-      "fermentum",
-      "Donec"
+      "Python",
+      "Statistical Analysis",
+      "R",
+      "OpenCL",
+      "Data Analysis"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
-      "fermentum",
-      "fermentum",
-      "fermentum"
+      "Virtulization",
+      "Testing Procedures",
+      "Data Modelling",
+      "Exploratory Data Analysis",
+      "Data Visulizations"
     ],
     "proficient": [
       "Java",
@@ -133,5 +126,5 @@
       "Git"
     ]
   },
-  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit."
+  "summary": "Driven data science aficionado familiar with gathering, cleaning, and organizing data for use by technical and non-technical personnel. Progressed understanding of measurable, mathematical, and analytical procedures. Highly organized, motivated, and diligent with significant background in software engineering. Computer vision enthusiast. Ready to thrive in demanding digital intelligence processing environments. Well-informed on latest machine learning advancements. Ready to combine tireless hunger for new skills with desire to exploit cutting-edge data science technology."
 }
