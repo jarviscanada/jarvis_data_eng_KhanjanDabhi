@@ -1,38 +1,23 @@
-package ca.jrvs.apps.grep.grep;
+package ca.jrvs.apps.grep;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
 import org.apache.log4j.BasicConfigurator;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class JavaGrepImp implements JavaGrep{
+public class JavaGrepImp implements JavaGrep {
     final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
     private String regex;
     private String rootPath;
     private String outFile;
 
-    public static void main(String[] args) throws IllegalAccessException {
-        if (args.length != 3) {
-            throw new IllegalAccessException("USAGE: JavaGrep regex rootPath outFile");
-        }
-        JavaGrepImp javaGrepImp = new JavaGrepImp();
-        JavaGrepImp.setRegex(args[0]);
-        JavaGrepImp.setRootPath(args[1]);
-        JavaGrepImp.setOutFile(args[2]);
-        BasicConfigurator.configure();
-
-        try {
-            javaGrepImp.process();
-        } catch (Exception ex) {
-            javaGrepImp.logger.error("Error: Unable to process", ex);
-        }
-    }
 
     @Override
     public void process() throws IOException {
@@ -47,8 +32,7 @@ public class JavaGrepImp implements JavaGrep{
                 }
             }
             writeToFile(matchedLines);
-        } catch (Exception e)
-        {
+        } catch (Exception e) {
             //log error
             logger.error("Error: Unable to write file to a disk", e);
         }
@@ -56,12 +40,37 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public List<File> listFiles(String rootDir) {
-        return null;
+        List<File> files = new ArrayList<>();
+        try {
+
+            Files.walk(Paths.get(rootDir)).forEach(file -> {
+                if (file.toFile().isFile()) {
+                    files.add(file.toFile());
+                }
+            });
+        } catch (IOException e) {
+            return null;
+        }
+        return files;
     }
 
     @Override
     public List<String> readLines(File inputFile) {
-        return null;
+        List<String> fileLines = new ArrayList<>();
+
+        try {
+            FileReader fr = new FileReader(inputFile);
+            BufferedReader br = new BufferedReader(fr);
+            String nextLine;
+            while ((nextLine = br.readLine()) != null) {
+                fileLines.add(nextLine);
+            }
+            fr.close();
+        } catch (Exception ex) {
+            logger.error("Error:", ex);
+        }
+
+        return fileLines;
     }
 
     @Override
@@ -74,7 +83,15 @@ public class JavaGrepImp implements JavaGrep{
     @Override
     public void writeToFile(List<String> lines) throws IOException {
 
+        BufferedWriter outStream = new BufferedWriter(new FileWriter(this.getOutFile()));
+        for (String line : lines) {
+            outStream.write(line);
+            outStream.newLine();
+        }
+        outStream.close();
+        logger.debug("File was written to disk successfully.");
     }
+
 
     @Override
     public String getRootPath() {
@@ -104,5 +121,23 @@ public class JavaGrepImp implements JavaGrep{
     @Override
     public void setOutFile(String outFile) {
         this.outFile = outFile;
+    }
+
+    public static void main(String[] args) throws IllegalAccessException {
+        if (args.length != 3) {
+            throw new IllegalAccessException("USAGE: JavaGrep regex rootPath outFile");
+        }
+        JavaGrepImp javaGrepImp = new JavaGrepImp();
+
+        javaGrepImp.setRegex(args[0]);
+        javaGrepImp.setRootPath(args[1]);
+        javaGrepImp.setOutFile(args[2]);
+        BasicConfigurator.configure();
+
+        try {
+            javaGrepImp.process();
+        } catch (Exception ex) {
+            javaGrepImp.logger.error("Error: Unable to process", ex);
+        }
     }
 }
