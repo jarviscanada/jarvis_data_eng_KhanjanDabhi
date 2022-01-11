@@ -46,7 +46,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KhanjanDab
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2021-present)**:  Worked on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Software Developer, Jarvis (2021-present)**:  Worked on Designing multiple projects as mentioned beore. Participated in Scrum meetings with peers daily and at the end of each sprint.
 
 
 ## Education
