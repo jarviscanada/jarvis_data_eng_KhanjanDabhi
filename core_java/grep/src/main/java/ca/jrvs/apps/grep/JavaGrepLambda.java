@@ -1,7 +1,5 @@
 package ca.jrvs.apps.grep;
 
-import com.sun.org.slf4j.internal.Logger;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -56,8 +54,7 @@ public class JavaGrepLambda extends JavaGrepImp {
         try {
             List<File> files = Files.list(Paths.get(rootDir)).map(Path::toFile).collect(Collectors.toList());
         } catch (IOException e) {
-            Logger logger = null;
-            logger.error("Error unable to process",e);
+            e.printStackTrace();
         }
         return listFiles(rootDir);
     }
