@@ -22,7 +22,14 @@ skills:
     
   # At least 5 skills
   competent:
-    - Python Frameworks: Keras,Matplolib,Nibable,Nilearn,Numpy,Pandas,Seaborn,Sklearn,Tensorflow
+    - Keras
+    - Matplolib
+    - Nibable
+    - Nilearn
+    - Numpy
+    - Pandas
+    - Sklearn
+    - Tensorflow
     - Virtulization
     - Testing Procedures
     - Data Modelling
