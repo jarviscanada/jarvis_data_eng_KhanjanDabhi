@@ -101,7 +101,7 @@ This table keeps track of each Linux server's host hardware. When the data is lo
 Column | Type | Description
 --------------|------|--------------
 id | `SERIAL` | When you insert data into the database, it generates a unique identity for you. The primary key is this column.
-hostname | `VARCHAR` | The hostname of the Linux server is stored here.r
+hostname | `VARCHAR` | The hostname of the Linux server is stored here.
 cpu_number | `INTEGER` | The number of CPUs in the server is listed here.
 cpu_architecture | `VARCHAR` | The architecture of the server's CPU is stored here.
 cpu_model | `VARCHAR` | The model of the server's CPU is stored here.
