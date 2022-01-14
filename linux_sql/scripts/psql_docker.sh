@@ -4,9 +4,6 @@
 cmd=$1
 db_username=$2
 db_password=$3
-
-
-
 sudo systemctl status docker || systemctl start docker
 
 docker container inspect jrvs-psql
@@ -19,7 +16,7 @@ case $cmd in
 
   if [ $container_status -eq 0 ]; then
 		echo 'Container already exists'
-		exit 1	
+		exit 0	
 	fi
 
 
