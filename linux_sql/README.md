@@ -1,9 +1,7 @@
 # Introduction
-<<<<<<< HEAD
-Developed a Linux Cluster Monitoring agent that allows a user to keep track of machine specs and usage data across numerous Linux systems. The agent collects machine hardware information using Bash scripts, which is subsequently saved in a Docker-provisioned PostgreSQL database. Crontab is used to collect resource utilisation data on a regular basis, which may then be evaluated using SQL queries. All of the testing was done on a Google Cloud Platform virtual machine running CentOS7 distribution of Linux. Every script was manually checked to ensure that it met all of the requirements.
-=======
+
+
 Developed a Linux Cluster Monitoring agent that allows users to keep track of machine specs and usage data across numerous Linux systems. The agent collects machine hardware information using Bash scripts, subsequently saved in a Docker-provisioned PostgreSQL database. Crontab is used to collect resource utilization data automatically, which may then be analyzed using SQL queries. All of the testings were done on a Google Cloud Platform virtual machine running CentOS7 distribution of Linux. Every script was manually checked to ensure that it met all of the requirements.
->>>>>>> feature/profile
 
 The technologies used for this project are Bash scripts, Postgres v9.6 database, psql v9.2, git v2.30.1, Docker v20.10.11, IntelliJ IDEA v2021.2.3, Jarvis Remote Desktop (JRD) - Remote development and testing environment running CentOS 7, Google Cloud Platform (GCP) provided the instance to run the JRD
 
