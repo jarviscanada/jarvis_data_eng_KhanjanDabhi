@@ -1,52 +1,36 @@
 # Khanjan Dabhi . Jarvis Consulting
 
-Driven data science aficionado familiar with gathering, cleaning, and organizing data for use by technical and non-technical personnel. Progressed understanding of measurable, mathematical, and analytical procedures. Highly organized, motivated, and diligent with significant background in software engineering. Computer vision enthusiast. Ready to thrive in demanding digital intelligence processing environments. Well-informed on latest machine learning advancements. Ready to combine tireless hunger for new skills with desire to exploit cutting-edge data science technology.
+I am a recent graduate from Lakehead University with a degree in Software Engineering. Organized and dependable candidate successful at managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to meet team goals. During my undergrad, I have studied performance analysis, compilers, algorithm design, operating systems, applied computational intelligence, parallel programming, machine learning and much more. I have worked on projects ranging from database management, scripting and refactoring Java programs to data modelling, data visualization and developing neural networks in Python. I am currently working at Jarvis to improve my skill sets as a developer while building challenging projects and applications using new technologies such as Docker, Springboot, Maven, REST API, RDBMS, etc. I strive to become a better developer through process of trial and error. Consistency, taking responsibility for your own work/actions and being diligent are traits that help me become a better verson of myself everyday.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, Python, Data Analysis, Docker
 
-**Competent:** Python, Statistical Analysis, R, OpenCL, Data Analysis
+**Competent:** Keras, Matplolib, Nibable, Nilearn, Numpy, Pandas, Sklearn, Tensorflow, Virtulization, Testing Procedures, Data Modelling, Exploratory Data Analysis, Data Visulizations
 
-**Familiar:** Virtulization, Testing Procedures, Data Modelling, Exploratory Data Analysis, Data Visulizations
+**Familiar:** Statistical Analysis, R, OpenCL, Google Cloud Platform, Structural and Functional Testing
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/linux_sql)]: Developed a Linux Cluster Monitoring system(LCM). In this project, the agent can be used to record hardware specifications of several nodes/servers which are connected with each other internally through a switch and communicate with IPv4. LCM is mainly used by Cluster Administration Team which manages and plans the resources for servers in a company. The data is then stored into a RDBMS server which can be used by the team to generate more information. This can help the administration team monitor and support the cluster in a better way.
-
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/core_java)]:
-      
-  - Twitter App: In Progress
-  - JDBC App: In Progress
-  - Grep App: In Progress
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/springboot)]: In Progress
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/python_data_anlytics)]: In Progress
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/hadoop)]: In Progress
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/spark)]: In Progress
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/cloud_devops)]: In Progress
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KhanjanDabhi/tree/master/linux_sql)]: Developed a Linux Cluster Monitoring agent that allows a user to keep track of machine specs and usage data across numerous Linux systems. The agent collects machine hardware information using Bash scripts, which is subsequently saved in a Docker-provisioned PostgreSQL database. Crontab is used to collect resource utilisation data on a regular basis, which may then be evaluated using SQL queries. All of the testing was done on a Google Cloud Platform virtual machine running CentOS7 distribution of Linux. Every script was manually checked to ensure that it met all of the requirements.
 
 
 ## Highlighted Projects
-**MRI-Brain-Tumor-Segmentation** [[GitHub](https://github.com/KhanjanDabhi/MRI-Brain-Tumor-Segmentation)]: Developed a MRI brain tumor segmentation algorithm which would detect tumors from 3D MRI Images as a part of BRATS2020 Competition. Used Machine Learning for this project. The main goal of this project was to use of machine learning models outside a notebook enviorment while taking part in BRATS2020 challenge to detect tumor region in MRI images. Objectives learned include manipulation of 3D image data, using heavy and task specific deep neural networks such as UNet.
+**MRI-Brain-Tumor-Segmentation** [[GitHub](https://github.com/KhanjanDabhi/MRI-Brain-Tumor-Segmentation)]: Developed an MRI brain tumour segmentation algorithm in Python using a supervised, fully convolutional neural network called UNet. Its architecture was modified using Tensorflow and extended to work with fewer training images to yield more precise segmentation. Exploratory Data Analysis, Normalization and Data Augmentation on 3D vectored MRI scans were performed using Python libraries such as Matplotlib, Nilearn, Nibable, Pandas and Numpy. Normalized images were used to train and test the neural network(UNet) generating the segmentation images. The images were stored on the local computer which can be used for further analysis. Concepts of convolution, max-pooling, flattening, activation and loss-functions were thoroughly understood. The Problem of managing computationally and resource expensive machine learning models for training as well as deployment was handled throughout this project by performing hyperparameter tuning in Jupyter Notebook as well as using divide and conquer methodology for training very large datasets.
 
-**Refactoring and Object-Oriented Design** [[GitHub](https://github.com/KhanjanDabhi/Refactoring)]: On given Movie Rental System, performed refactoring step-by-step to make it easier to add new code, fixed smelly code to make sure that the concepts of object-orientation are preserved/applied, recover parts of the system design by generating class diagrams of the system, made sure that all the unit test passed after applying changes.
+**Refactoring and Object-Oriented Design** [[GitHub](https://github.com/KhanjanDabhi/Refactoring)]: Performed refactoring on a given Movie Rental System which was designed in Java to operate on a command-line interface. Performed refactoring step-by-step to make it easier to add new code, fixed smelly code to make sure that the concepts of object-orientation are preserved/applied, recover parts of the system design by generating class diagrams of the system, making sure that all the unit tests passed after applying changes. Developed a strategy where refactoring is carried out in small steps, with the tests being run after each change so that one can quickly recover from any faults that are introduced as part of the refactoring process.
 
 **Concepts of Operating Systems** [[GitHub](https://github.com/KhanjanDabhi/Concepts-of-Operating-Systems)]: Worked in a team of four to design a portable file manipulator which will operate on files for various operating systems. POFM was written in C, using standard commands and no system calls as the program had to be portable. This was tested on Windows, Linux and MacOS.
 
-**Applied Computational Intellegence** [[GitHub](https://github.com/KhanjanDabhi/Applied-Computational-Intelligence)]: Detect COVID-19 in CT scans for lungs. The dataset was obtained from Kaggle which contains images for lung CT scan with and without the infection. Key concepts of machine learning for images were used such as data augmentation, adaptive histogram equalization, contrast-stretching and cross validation. Effects of image segmentation on these models was also noted by performing un-supervised segmentation through K-means clustering. Pre-trained and self-trained neural networks were compared for this project such as VGG16, ResNet50 and Mobile-Net.
+**Applied Computational Intellegence** [[GitHub](https://github.com/KhanjanDabhi/Applied-Computational-Intelligence)]: This project was an analysis of various pre-trained and self-trained neural networks such as VGG16, ResNet50 and Mobile-Net. These models were compared for their classification accuracy in Python using Keras and TensorFlow. They were trained on the same dataset which contained images for CT scans of lungs with and without an infection. Using Pandas, Numpy and Scipy, key concepts of machine learning for images were applied on the dataset such as data augmentation, adaptive histogram equalization, contrast-stretching and cross-validation. SKlearn was used to perform hyperparameter tuning on each of the above-mentioned models and changes in accuracy w.r.t. tuning were manually recorded.  Effects of image segmentation on these models were also noted by performing un-supervised segmentation through K-means clustering. Quantitative analysis was done at the end from the collected data to generate a properly formatted report in LaTeX.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2021-present)**:  Worked on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Software Developer, Jarvis (2021-present)**:  I've worked several of projects that required the use of Linux, Bash, Docker, Postgres, Java, and Spring Boot. In every project, I employed the scrum agile methodology with Git and Git Flow. As a scrum leader, I assisted people with project-related challenges and led daily scrum meetings.
 
 
 ## Education
@@ -57,5 +41,5 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KhanjanDab
 
 ## Miscellaneous
 - Google Data Analytics Certificate
-- Avid Plant Grower
-- Competitive gaming
+- Active member of the Budtender's Association of Canada (BTA)
+- Organizing Competitive gaming matches
