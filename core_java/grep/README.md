@@ -16,8 +16,8 @@ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [roo
 2. Run with Docker
 
 ```
-docker pull rpolisuk/grep
-docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out rpolisuk/grep [regex] [rootDirectory] [outFile]
+docker pull kdabhi/grep
+docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out kdabhi/grep [regex] [rootDirectory] [outFile]
 ```
 
 # Implementation
