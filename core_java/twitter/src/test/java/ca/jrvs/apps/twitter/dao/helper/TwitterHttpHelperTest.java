@@ -20,7 +20,7 @@ public class TwitterHttpHelperTest {
         //Creating components
         HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
         HttpResponse response = httpHelper
-                .httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=first_tweet2"));
+                .httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=test_no_3"));
         System.out.println(EntityUtils.toString(response.getEntity()));
     }
 
