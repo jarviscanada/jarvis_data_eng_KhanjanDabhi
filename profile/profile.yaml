@@ -53,7 +53,11 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Developed a Linux Cluster Monitoring agent that allows users to keep track of machine specs and usage data across numerous Linux systems. The agent collects machine hardware information using Bash scripts, subsequently saved in a Docker-provisioned PostgreSQL database. Crontab is used to collect resource utilization data automatically, which may then be analyzed using SQL queries. All of the testings were done on a Google Cloud Platform virtual machine running CentOS7 distribution of Linux. Every script was manually checked to ensure that it met all of the requirements.
- 
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "GREP: Designed a clone of the Linux egrep tool that reads all of the files in the current directory and then examines each file for the regular expression that was supplied to the application to search. Java, streams, lambdas, and regular expressions were used to create this project."
+      - "JDBC: Using JDBC and a Postgres database running in a Docker container, created a Java application to understand the database CRUD (create, read, update, and delete) functions. The DAO and DTO design patterns have also been used to transfer objects between classes and modules."
 
 # List of personal or academic projects
 # Feel free to add more projects
